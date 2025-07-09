@@ -22,5 +22,9 @@ public class _03_실수형 {
 		// %m.nf   : m(전체자리수) n(소수점이하 자리수)
 		System.out.printf("%.20f\n", f1);
 		System.out.printf("%.20f\n", d1);
+		
+		//소수점 출력자릿수는 최우선 지켜진다.
+		System.out.printf("%22.20f\n", f1);
+		
 	}
 }
