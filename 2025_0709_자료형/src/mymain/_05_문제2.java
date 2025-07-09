@@ -16,9 +16,9 @@ public class _05_문제2 {
 		System.out.print("반지름 입력하세요 : ");
 		r=scanner.nextDouble();
 		
-		double circumference = 2*Math.PI*r;
+		double circumference = 2.0*Math.PI*r;
 		double area = r*r*3.14;
-		double volume_of_a_sphere=(4/3)*3.14*(Math.pow(r,3));
+		double volume_of_a_sphere=(4.0/3.0)*3.14*(Math.pow(r,3));
 		
 		System.out.printf("원의 반지름 : %.1f(m)\n", r);
 		System.out.printf("원의 둘레 : %.1f(m)\n", circumference);
