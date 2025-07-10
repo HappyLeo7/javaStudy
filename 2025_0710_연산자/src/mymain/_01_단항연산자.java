@@ -30,17 +30,42 @@ public class _01_단항연산자 {
 
 		// 형변환(Type Conversion)
 		/*
-		 * 1. 자동형변환(Promotion) : 묵시적형변환 1)대입(치환)시 변수=값 (좌)=(우) 좌변항의 타입으로 맞춰진다.(조건 : 좌변항에
-		 * 클경우 [좌>우])
+		 * 1. 자동형변환(Promotion) : 묵시적형변환 
+		 * 1)대입(치환)시 
+		 * 			변수=값 
+		 * 		   (좌)=(우) 
+		 * 			좌변항의 타입으로 맞춰진다.(조건 : 좌변항이 클경우 [좌>우])
 		 * 
-		 * 2)연산시 : ㅏㅈ료형이 큰쪽으로 맞춰진다.
-		 * 		1+1.0
+		 * 2)연산시 : 자료형이 큰쪽으로 맞춰진다.
+		 * 		1+1.0 =>1.0 +1.0
+		 * 		byte+byte -> int
+		 * 		short+short -> int
+		 * 		byte+short -> int
+		 * 		int형보다 작은 자료형끼리의 연산결과는 int로 된다.
+		 * 		연산전에 int형을 변환시킨후에 연산수행
+		 * 
+		 * 		byte + int -> int
+		 * 		int + long -> long
+		 *      long + float -> float
+		 *      
+		 * 2. 강제형변환(cast)      
 		 */
 
-		// 1.자동/대입시형변환
+		// 1. 1)자동/대입시형변환
 		double d = 100; // int -> double : 100 -> 100.0
+		
+		// 1. 2)자동/연산시형변환
+		byte b1=1, b2=2,b3;
+		//Type mismatch: cannot convert from int to byte
+		b3=(byte)(b1+b2);
 		
 		// 2. 강제형변환
 		float f = (float)1.0;
+		
+		//부호연산자
+		int x = -100;
+		int y = x<0?-x:x;
+		
+		System.out.printf("%d %d",x,y);
 	}
 }
