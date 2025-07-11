@@ -2,7 +2,7 @@ package mymain;
 
 import java.util.Scanner;
 
-public class _10_문제1 {
+public class _99_문제1 {
 	 public static void main(String[] args) {
 		
 			/*		 
@@ -26,7 +26,7 @@ public class _10_문제1 {
 		 System.out.println(kiInch);
 		 
 		 double ft=12.0;
-		 double kiFt=0;
+		 double kiFt=0.0;
 		 double kiFt2=0.0;
 		 
 		 kiFt=(kiInch/ft);
