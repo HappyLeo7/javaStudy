@@ -11,7 +11,6 @@ public class _98_문제2_이름을숫자로쓰기 {
 		char w = '원';
 		
 		Scanner scanner = new Scanner(System.in);
-		
 		System.out.print("10진수 : [");
 		System.out.print((int)s);
 		System.out.print(".");
