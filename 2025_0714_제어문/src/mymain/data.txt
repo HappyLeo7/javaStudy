@@ -1,0 +1,9 @@
+I'm Liw.
+나는 리우 입니다.
+
+I'm Groot.
+나는 그루트 입니다.
+
+PI = 3.14
+
+if else는 else if 라고 읽지 않습니다.
