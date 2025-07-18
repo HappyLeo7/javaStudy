@@ -2,9 +2,9 @@ package mymain;
 
 import java.util.Arrays;
 
-import myutil.MyArrays;
+import myutil.MyArrays1;
 
-public class MyMain_Array1 {
+public class MyMain_Array1_01 {
 	public static void main(String [] args) {
 		
 		// 1차원 배열
@@ -25,16 +25,16 @@ public class MyMain_Array1 {
 		mr[2]=3;
 		mr[3]=4;
 		
-		MyArrays.display(mr);
+		MyArrays1.display(mr);
 		System.out.println(mr[3]);
 		System.out.println(mr);
 		System.out.println("[I@58372a00");
 		System.out.println(n);
 		
 		Arrays.fill(mr,0);
-		MyArrays.display(mr);
-		MyArrays.fill(mr, 0);
-		MyArrays.display(mr);
+		MyArrays1.display(mr);
+		MyArrays1.fill(mr, 0);
+		MyArrays1.display(mr);
 		
 		
 	}

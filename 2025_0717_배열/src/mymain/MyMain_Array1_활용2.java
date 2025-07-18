@@ -3,7 +3,7 @@ package mymain;
 import java.util.Calendar;
 import java.util.Scanner;
 
-import myutil.MyArrays;
+import myutil.MyArrays1;
 
 public class MyMain_Array1_활용2 {
 	public static void main(String[] args) {

@@ -2,7 +2,7 @@ package mymain;
 
 import java.util.Scanner;
 
-public class MyMain_Array1활용1 {
+public class MyMain_Array1_활용1 {
 	
 	public static void main(String[] args) {
 							//        0  1  2  3  4  5  6  7  8  9 10 11 <-index : month-1

@@ -1,6 +1,6 @@
 package myutil;
 
-public class MyArrays {
+public class MyArrays1 {
 
 	// 배열을 출력하는 메소드
 	// Call By Reference
