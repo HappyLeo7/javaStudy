@@ -46,6 +46,8 @@ public class MaBangJin {
 		return ma_array;
 	}
 
+	
+	//행의 합계(가로)
 	public static int rowSum(int[][] ma_array) {
 		int sum = 0;
 
@@ -56,6 +58,8 @@ public class MaBangJin {
 		return sum;
 	}
 
+	
+	//열의 합계(세로)
 	public static int colSum(int[][] ma_array) {
 		int sum = 0;
 
@@ -66,6 +70,8 @@ public class MaBangJin {
 		return sum;
 	}
 
+	
+	//대각선의 합계 (\)
 	public static int crossSum(int[][] ma_array) {
 		int sum = 0;
 

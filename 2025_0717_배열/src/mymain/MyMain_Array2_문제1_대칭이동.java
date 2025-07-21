@@ -4,6 +4,7 @@ import myutil.MyArrays2;
 import myutil.MyTrans;
 
 public class MyMain_Array2_문제1_대칭이동 {
+	
 	public static void main(String[] args) {
 		int chasu=5;
 		int [][] src = new int [chasu][chasu];
