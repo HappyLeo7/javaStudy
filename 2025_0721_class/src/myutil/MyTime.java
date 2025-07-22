@@ -49,15 +49,24 @@ public class MyTime {
 			System.out.println("잘못된 시간입니다");
 		}else {
 			if (hour >= 0 && hour <= 12) {
-				am_pm = "오전";
+				am_pm = "[오전]";
 			} else if (hour > 12) {
 				this.hour = hour - 12;
-				am_pm = "오후";
+				am_pm = "[오후]";
 			}
 			System.out.printf("%s %02d : %02d : %02d\n", am_pm, hour, minute, second);
 			
 		}
 
+	}
+	
+	public void display4() {
+		String am_pm = hour<12 ? "오전":"오후";
+		System.out.printf("[%s]%02d:%02d:%02d\n", 
+				am_pm,
+				hour>12?hour-12:hour,
+						minute,
+						second);
 	}
 
 }
