@@ -27,6 +27,12 @@ public class MyMath {
 		return re;
 	}
 
+	//TODO 재귀호출을 이용한 합구하기
+	public static int hap_recursive(int n) {
+		if(n==0)return 0;
+		return n+hap_recursive(n-1);
+	}
+	
 	// 1~n까지의 합
 	public static int hap(int n) {
 		int sum = 0;

@@ -3,7 +3,6 @@ package mymain;
 public class _06_이진논리연산자2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		int birthday = 0x19991225;
 		//            0001  1001  1001  1001  0001  0010  0010  0101  (0x19991225 2진수로 변환)

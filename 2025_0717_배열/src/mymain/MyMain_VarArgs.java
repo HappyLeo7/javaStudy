@@ -31,15 +31,21 @@ public class MyMain_VarArgs {
 	}
 	
 	public static void main(String[] args) {
-		//가변인자 : 전달인자가 정해지지 않았다.
+		//TODO 가변인자 : 전달인자가 정해지지 않았다.
 		display(10);
 		display(10,12);
 		display(10,12,13);
 		System.out.println();
 		
-		int result = MyMath.greatest(500,1,3,2,10,12,141,23,111,12,51,5,16,1234274);
+		//TODO Math 는  거의 static 구조로 되어있음
+		int m = Math.max(10, 5); 
+		
+		
+		//TODO MyMath는 static 메소드 이므로 클래스를 import 한 후에 아래와 같이 바로 쓸수있다.
+		//TODO static 메소드가 아닌 경우에는  new 해서 객체 생성후 사용
+		int result = MyMath.greatest(10,2,3,4,50,6,7,80,90);
 		System.out.println("제일큰수 : "+result);
-		int result1 = MyMath.least(5,1,3,2,-1);
+		int result1 = MyMath.least(-5,1,3,-2,-1);
 		System.out.println("제일작수 : "+result1);
 		
 	}

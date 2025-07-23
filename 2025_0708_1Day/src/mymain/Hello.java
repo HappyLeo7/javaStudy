@@ -13,7 +13,6 @@ public class Hello {
 	// 복사         : ctrl + alt + 방향키
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 //		System : 클래스명
 //		out    : 객체명
 //		println: 메소드명(함수명) print + line next (줄바꾸기)

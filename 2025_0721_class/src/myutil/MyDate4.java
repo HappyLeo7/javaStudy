@@ -12,7 +12,6 @@ public class MyDate4 {
 	
 	public MyDate4() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 

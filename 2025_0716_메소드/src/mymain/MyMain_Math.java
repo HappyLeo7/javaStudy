@@ -1,5 +1,7 @@
 package mymain;
 
+import myutil.MyMath;
+
 public class MyMain_Math {
 
 	// public : 접근 허용
@@ -19,6 +21,10 @@ public class MyMain_Math {
 		// 클래스명,메소드명()
 		int result = MyMain_Math.plus(x, y);// 실인자
 		System.out.printf("%d+%d = %d\n", x, y, result);
+		
+		
+		result = MyMath.hap_recursive(x);
+		System.out.printf("%d까지의 합 = %d\n", x,  result);
 
 	}
 }
