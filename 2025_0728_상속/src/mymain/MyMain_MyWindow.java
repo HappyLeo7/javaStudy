@@ -2,12 +2,15 @@ package mymain;
 
 import java.awt.Dimension;
 import java.awt.Frame;
+import java.awt.GridLayout;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 // JAVA 패키지중 AWT(Abstract Window Toolkit) 패키지: 윈도우관련기능 정의
 // Frame		<- awt
@@ -17,6 +20,11 @@ public class MyMain_MyWindow extends JFrame {
 	//화면 해상도를 저장할 변수
 	int screen_w;
 	int screen_h;
+	
+	JButton jbt_kor;
+	JButton jbt_eng;
+	JButton jbt_jpn;
+	JButton jbt_mun;
 	
 	// 기본생성자
 	public MyMain_MyWindow() {
@@ -29,6 +37,29 @@ public class MyMain_MyWindow extends JFrame {
 		this.screen_h=d.height;
 		System.out.printf("w: %d  h: %d\n",screen_w,screen_h);
 
+		//버튼생성
+		jbt_kor = new JButton("한글");
+		jbt_eng = new JButton("영문");
+		jbt_jpn = new JButton("일어");
+		jbt_mun = new JButton("문어");
+		//배치방법은 3행 1열로 배치
+		this.setLayout(new GridLayout(2,2)); //(행,열)
+
+		//버튼추가
+		this.add(jbt_kor);
+		this.add(jbt_eng);
+		this.add(jbt_jpn);
+		this.add(jbt_mun);
+		this.add(jbt_mun);
+		
+		//버튼이벤트 처리
+		//jbt_kor버튼이 클릭이 되면 on_click_kor() 호출하겠다.
+		jbt_kor.addActionListener((e)->{ on_click_kor(); });
+		jbt_eng.addActionListener((e)->{ on_click_eng(); });
+		jbt_jpn.addActionListener((e)->{ on_click_jpn(); });
+		jbt_mun.addActionListener((e)->{ on_click_mun(); });
+		
+		
 		// 위치지정
 		super.setLocation(300, 200);
 
@@ -47,6 +78,25 @@ public class MyMain_MyWindow extends JFrame {
 		// 키보드 이벤트 설정
 		// Delegation Event Mode (위임 이벤트 모델)
 		this.addKeyListener(new MykeyAdapter());
+	}
+
+	//버튼처리 메서드
+	private void on_click_mun() {
+		JOptionPane.showConfirmDialog(this, "무너무너누누어어어"); // 예 아니요 취소 선택 버튼
+	}
+
+	private void on_click_jpn() {
+		
+		JOptionPane.showMessageDialog(this, "일본어 인사말 : 사요나라");
+	}
+
+	private void on_click_eng() {
+		JOptionPane.showMessageDialog(this, "영어 인사말 : alright");
+		
+	}
+
+	private void on_click_kor() {
+		JOptionPane.showMessageDialog(this, "한국어 인사말 : 안녕하세요");
 	}
 
 	// 키보드 이벤트 처리 객체
