@@ -1,8 +1,6 @@
 package vo;
 
-import java.io.Serializable;
-
-public class TextVo implements Serializable{
+public class TextVo{
 	Object i;
 	public Object to() {
 		return this.i;

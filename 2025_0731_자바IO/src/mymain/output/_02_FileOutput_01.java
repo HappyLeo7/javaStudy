@@ -6,7 +6,6 @@ import java.io.OutputStream;
 public class _02_FileOutput_01 {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
         OutputStream os  = new FileOutputStream("data.txt");
         
         os.write(65);

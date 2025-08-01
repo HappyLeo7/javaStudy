@@ -7,23 +7,31 @@ import java.io.Serializable;
 //           cf)DTO(Data Transfer Object) : 전달객체(Rest API)
 //TODO                직렬화가 가능한 객체라고 알려주는것
 public class PersonVo implements Serializable{
+	
+	//필드
 	String name;
 	int age;
 	String addr;
 	
+	//중복매서드
 	@Override
 	public String toString(){
 		return String.format("%s - %d - %s", this.name,this.age,this.addr);
 	}
 	
+	//기본생성자
 	public PersonVo() {
 	}
+	
+	//생성자
 	public PersonVo(String name, int age, String addr) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.addr = addr;
 	}
+	
+	//get set 메소드
 	public String getName() {
 		return name;
 	}

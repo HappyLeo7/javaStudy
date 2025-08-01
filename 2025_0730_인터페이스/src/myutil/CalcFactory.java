@@ -19,7 +19,6 @@ public class CalcFactory {
 	
 	//private 외부에서 생성 못하도록 설정
 	private CalcFactory() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	//??

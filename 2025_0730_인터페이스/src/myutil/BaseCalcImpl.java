@@ -5,21 +5,18 @@ public class BaseCalcImpl implements BaseCalc {
 	//재정의
 	@Override
 	public int plus2(int a, int b) {
-		// TODO Auto-generated method stub
 		return a + b;
 	}
 
 	//재정의
 	@Override
 	public int plus(int a, int b) {
-		// TODO Auto-generated method stub
 		return a + b;
 	}
 
 	//재정의
 	@Override
 	public int minus(int a, int b) {
-		// TODO Auto-generated method stub
 		return a - b;
 	}
 

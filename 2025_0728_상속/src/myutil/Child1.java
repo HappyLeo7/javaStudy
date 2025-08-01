@@ -7,7 +7,6 @@ public class Child1 extends Parent1{ //상속
 	//		   조건2) 2. 접근제한자는 크거나 같아야 함
 	@Override // <= 어노테이션
 	public void sub() {
-		// TODO Auto-generated method stub
 		System.out.println("---Child1.sub() call---");
 	}
 
@@ -15,7 +14,6 @@ public class Child1 extends Parent1{ //상속
 	 합을 구할수 있는 메소드 */
 	@Override
 	public void sub(int n) {
-		// TODO Auto-generated method stub
 		super.sub(n);
 	}
 	
