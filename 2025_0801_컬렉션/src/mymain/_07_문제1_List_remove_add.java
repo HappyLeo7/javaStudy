@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class _07_문제1 {
+public class _07_문제1_List_remove_add {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n;
